@@ -1,0 +1,45 @@
+{
+  "name": "nome-do-seu-projeto",
+  "version": "1.0.0",
+  "description": "API em Node.js para realizar o gerenciamento completo de tarefas (CRUD)",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node  --watch src/server.js",
+    "prepare": "husky",
+    "lint:prettier:check": "prettier --check .",
+    "lint:prettier:fix": "prettier --write .",
+    "lint:eslint:check": "eslint .",
+    "commit": "cz"
+  },
+  "dependencies": {
+    "express": "4.17.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caioolopes/Node.js.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/caioolopes/Node.js/issues"
+  },
+  "homepage": "https://github.com/caioolopes/Node.js#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "9.37.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-prettier": "5.5.4",
+    "husky": "^9.1.7",
+    "lint-staged": "16.2.3",
+    "prettier": "3.6.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
