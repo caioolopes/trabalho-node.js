@@ -10,10 +10,15 @@
     "lint:prettier:check": "prettier --check .",
     "lint:prettier:fix": "prettier --write .",
     "lint:eslint:check": "eslint .",
-    "commit": "cz"
+    "commit": "cz",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --forceExit",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll"
   },
   "dependencies": {
-    "express": "4.17.1"
+    "csv-parse": "^6.1.0",
+    "express": "4.17.1",
+    "multer": "^2.0.2",
+    "node-fetch": "^3.3.2"
   },
   "repository": {
     "type": "git",
@@ -34,6 +39,7 @@
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-prettier": "5.5.4",
     "husky": "^9.1.7",
+    "jest": "^30.2.0",
     "lint-staged": "16.2.3",
     "prettier": "3.6.2"
   },
